@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
+gem 'bootstrap-sass', '2.1'
 gem 'jquery-rails', '2.0.2'
 
 # Bundle edge Rails instead:
