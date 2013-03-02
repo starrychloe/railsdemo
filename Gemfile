@@ -1,25 +1,31 @@
 source 'https://rubygems.org'
-
+gem 'minitest'
 gem 'rails', '3.2.11'
 gem 'bootstrap-sass', '2.1'
 gem 'jquery-rails', '2.0.2'
 gem 'bcrypt-ruby', '3.0.1'
+gem 'will_paginate', '3.0.3'
+gem 'bootstrap-will_paginate', '0.0.6'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development do
   gem 'annotate', '2.5.0'
+  gem 'thin'
+  gem 'faker', '1.0.1'
 end
 
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
   gem 'rspec-rails', '2.11.0'
-  gem 'guard-rspec', '1.2.1'
-  gem 'guard-spork', '1.2.0'
+  # gem 'guard-rspec', '1.2.1'   #, require: false
+  # gem 'guard-spork', '1.2.0'   #, require: false
   gem 'spork', '0.9.2'
-  gem 'wdm', '~> 0.0.3'
+  #gem 'wdm', '~> 0.0.3'
+  gem 'rails-dev-boost', :git => 'git://github.com/thedarkone/rails-dev-boost.git'
+  # gem 'listen'
 end
 
 
@@ -48,7 +54,8 @@ group :test do
 end
 
 group :production do
-  gem 'pg', '0.12.2'
+  #gem 'pg', '0.12.2'
+  gem 'sys-proctable', '0.9.2', :path => "vendor/gems"
 end
 
 
