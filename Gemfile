@@ -13,7 +13,7 @@ gem 'faker', '1.0.1'
 
 group :development do
   gem 'annotate', '2.5.0'
-  gem 'thin'
+  #gem 'thin'
 end
 
 
