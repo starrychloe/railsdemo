@@ -54,7 +54,7 @@ group :test do
 end
 
 group :production do
-  #gem 'pg', '0.12.2'
+  gem 'pg', '0.12.2'
   gem 'sys-proctable', '0.9.2', :path => "vendor/gems"
 end
 
